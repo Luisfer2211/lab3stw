@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Five Nights at Freddy's</title>
+</head>
+<body>
+    <header>
+        <h1>Five Nights at Freddy's</h1>
+        <h2>Noche 1 - 12:00 AM</h2>
+    </header>
+
+    <figure>
+        <img src="assets/office.jpg" alt="Oficina" width="500">
+        <figcaption>Tu oficina de seguridad</figcaption>
+    </figure>
+
+    <article>
+        <p>Estás en tu primera noche como guardia de seguridad. Las cámaras muestran movimiento extraño...</p>
+        <details>
+            <summary>Ver mensaje del día</summary>
+            <p>"Recuerda revisar las cámaras frecuentemente y administrar bien la energía eléctrica."</p>
+        </details>
+    </article>
+
+    <nav>
+        <h3>Primera decisión:</h3>
+        <ul>
+            <li><a href="paginas/pagina1.html">Revisar cámara del escenario</a></li>
+            <li><a href="paginas/pagina2.html">Cerrar puerta izquierda</a></li>
+            <li><a href="paginas/pagina3.html">Revisar suministro de energía</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Estado del Sistema</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Puertas</th>
+                    <th>Cámaras</th>
+                    <th>Energía</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Abiertas</td>
+                    <td>Activas</td>
+                    <td>100%</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Sistema principal</td>
+                    <td>Online</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Actualizado: 12:05 AM</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <section>
+        <h2>Registro de Emergencias</h2>
+        <form action="reporte.php" method="POST">
+            <label for="nombre">Nombre guardia:</label>
+            <input type="text" id="nombre" name="nombre"><br>
+            
+            <label for="hora">Hora del evento:</label>
+            <input type="time" id="hora" name="hora"><br>
+            
+            <label>Tipo de emergencia:</label>
+            <select>
+                <option>Falla eléctrica</option>
+                <option>Movimiento anómalo</option>
+                <option>Daño estructural</option>
+            </select><br>
+            
+            <label>Prioridad:</label>
+            <input type="radio" name="prioridad" value="alta"> Alta
+            <input type="radio" name="prioridad" value="baja"> Baja<br>
+            
+            <label>Aceptar protocolo:</label>
+            <input type="checkbox"><br>
+            
+            <button type="submit">Enviar reporte</button>
+        </form>
+    </section>
+
+    <audio controls>
+        <source src="assets/static.mp3" type="audio/mpeg">
+    </audio>
+
+    <footer>
+        <p>Freddy Fazbear's Pizza - Sistema de Seguridad</p>
+    </footer>
+</body>
+</html>
